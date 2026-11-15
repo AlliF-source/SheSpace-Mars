@@ -1,0 +1,58 @@
+
+.environmental-panel {
+  margin: 30px auto;
+  padding: 28px;
+  max-width: 1100px;
+  background: rgba(12, 20, 40, 0.9);
+  border: 1px solid rgba(255, 153, 76, 0.3);
+  border-radius: 18px;
+  color: white;
+}
+
+.environmental-panel h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffad69;
+  margin-bottom: 12px;
+}
+
+.environmental-panel > p {
+  margin-bottom: 24px;
+  color: #c5ccda;
+}
+
+.environmental-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.environmental-card {
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 153, 76, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #202b45, #111a2c);
+}
+
+.environmental-card h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffad69;
+  margin-bottom: 18px;
+}
+
+.environmental-card p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.environmental-card span {
+  display: block;
+  margin-top: 12px;
+  color: #aebbd0;
+}
+
+@media (max-width: 700px) {
+  .environmental-cards {
+    grid-template-columns: 1fr;
+  }
+}
