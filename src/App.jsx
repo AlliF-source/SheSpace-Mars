@@ -12,7 +12,7 @@ prototipo corresponden al equipo SHE SPACE.
 */
 import { useState } from 'react'
 import './App.css'
-import Tablet from './Tablet'
+import CesiumMap from './CesiumMap'
 import EnvironmentalData from './EnvironmentalData'
 
 
@@ -142,6 +142,11 @@ function App() {
       newsDescription: 'Discover the latest space exploration updates and join us on our adventure to Mars.',
       equipo: 'THE TEAM BEHIND THE MISSION',
       textoEquipo: 'Meet the people making this adventure possible.',
+      rolMecatronica: 'Mechatronics Engineering Student',
+      rolPrimaria: 'Elementary School Student',
+      rolInformatica: 'Computer Engineering Student',
+      etiquetaMentora: 'MENTOR',
+      tituloMentora: 'Licentiate Degree in Computer Engineering with an Emphasis in Software Development',
       pendiente: 'Our team is getting ready for takeoff.',
       crew: 'OUR CREW · 2026',
       pie: 'EXPLORING NEW HORIZONS',
@@ -230,8 +235,9 @@ function App() {
             </button>
           </div>
           
-          <Tablet onLocationSelect={setSelectedMarsLocation} />
+          <CesiumMap onLocationSelect={setSelectedMarsLocation} />
           <EnvironmentalData selectedLocation={selectedMarsLocation} />
+
 
         </section>
       </main>
@@ -437,7 +443,7 @@ function App() {
       />
 
       <div className="team-info">
-        <h3>ALLYSSON PAULINA FOX ZUÑIGA</h3>
+        <h3>ALLISSON PAULINA FOX ZUÑIGA</h3>
         <p>Estudiante de Ingeniería Mecatrónica</p>
       </div>
     </div>
